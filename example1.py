@@ -60,7 +60,7 @@ if __name__ == "__main__":
     env["COMPONENT_NAME"]="upf_cld"
     upf_cld = net.addDockerHost(
         "upf_cld",
-        dimage="my5gc_v2-4-4",
+        dimage="granelli/my5gc_v2-4-4",
         ip="192.168.0.112/24",
         # dcmd="",
         dcmd="bash /open5gs/install/etc/open5gs/temp/5gc_up_init.sh",
@@ -94,7 +94,7 @@ if __name__ == "__main__":
     env["COMPONENT_NAME"]="upf_mec"
     upf_mec = net.addDockerHost(
         "upf_mec",
-        dimage="my5gc_v2-4-4",
+        dimage="granelli/my5gc_v2-4-4",
         ip="192.168.0.113/24",
         # dcmd="",
         dcmd="bash /open5gs/install/etc/open5gs/temp/5gc_up_init.sh",
