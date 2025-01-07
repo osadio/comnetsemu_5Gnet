@@ -25,7 +25,7 @@ if __name__ == "__main__":
     info("*** Adding Host for open5gs CP\n")
     cp = net.addDockerHost(
         "cp",
-        dimage="my5gc_v2-4-4",
+        dimage="granelli/my5gc_v2-4-4",
         ip="192.168.0.111/24",
         # dcmd="",
         dcmd="bash /open5gs/install/etc/open5gs/5gc_cp_init.sh",
